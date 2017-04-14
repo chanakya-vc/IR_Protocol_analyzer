@@ -17,7 +17,7 @@ loop1:	RIM
 	CALL detect1
 	ANI 80H
 	JZ proc2
-	;LCD code to display protocol 1
+	MVI D, 03H		;LCD code to display protocol 1
 proc2:	INR D
 	
 
